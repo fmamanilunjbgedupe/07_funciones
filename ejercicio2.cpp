@@ -21,11 +21,16 @@ int main(){
 cocienteresto(int n1,int n2){
 	int i;
 	i=0;
-	while(n2<=n1){
-		n1=n1-n2;
-		i=i+1;
+	if(n2==0){
+		cout<<"no se puede hacer el calculo del resto y el cociente"<<endl;
 	}
+	else{
+		while(n2<=n1){
+		    n1=n1-n2;
+		    i=i+1;
+	    }
 	cout<<"el cociente es: "<<i<<endl;
 	cout<<"el resto de la funcion es: "<<n1<<endl;
+	}
 	return 0;
 }
