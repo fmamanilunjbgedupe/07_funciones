@@ -5,6 +5,10 @@ int main (){
 	int n;
 	cout<<"ingrese el numero para determinar si es primo o no"<<endl;
 	cin>>n;
+	while(n<1){
+		cout<<"ingrese un numero positivo y diferente de 0"<<endl;
+		cin>>n;
+	}
 	primo(n);
 	return 0;
 }
