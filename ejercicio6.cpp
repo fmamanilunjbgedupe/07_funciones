@@ -5,6 +5,10 @@ int main(){
 	int n;
 	cout<<"ingrese un numero para determinar si es perfecto o no"<<endl;
 	cin>>n;
+	while(n<1){
+		cout<<"ingre un numero positivo y diferente de 0"<<endl;
+		cin>>n;
+	}
 	perfecto(n);
 	return 0;
 }
